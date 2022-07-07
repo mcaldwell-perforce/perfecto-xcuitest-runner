@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    options: '-PcloudURL=$(cloud) -PsecurityToken=$(token) -Dreportium-job-name=$(Build.DefinitionName) -Dreportium-job-number=$(Build.BuildId) -Dreportium-job-branch=$(Build.SourceBranch)'
+    options: '-PcloudURL=$(cloud) -PsecurityToken=$(token) -PjobName=$(Build.DefinitionName) -PjobNumber=$(Build.BuildId) -Pbranch=$(Build.SourceBranch)'
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
