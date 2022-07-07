@@ -1,0 +1,25 @@
+{
+  "cloudURL": "<<cloud>>",
+  "securityToken": "<<token>>",
+  "appPath": "./builds/SimpleAppForTesting.ipa",
+  "testAppPath": "./builds/SimpleAppForTesting-Runner.ipa",
+  "installationDetails": { "preCleanUp": true, "resign": true },
+  "numOfDevices": 1,
+  "shard": false,
+  "devices": [
+    {
+      "platformName": "iOS",
+      "model": "iPhone-1.*",
+      "platformVersion": "^1[45].*"
+    }
+  ],
+  "runUITests": true,
+  "runUnitTests": false,
+  "postExecution" : { "uninstall" : true },
+  "jobName": "default_job",
+  "jobNumber": "1",
+  "takeScreenshotOnTestEnd": true,
+  "takeScreenshotOnTestFailure": true,
+  "takeScreenshotOnTestStep": true,
+  "testTimeout": 300000
+}
