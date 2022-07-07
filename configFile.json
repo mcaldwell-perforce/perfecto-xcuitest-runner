@@ -1,8 +1,8 @@
 {
   "cloudURL": "<<cloud>>",
   "securityToken": "<<token>>",
-  "appPath": "./builds/SimpleAppForTesting.ipa",
-  "testAppPath": "./builds/SimpleAppForTesting-Runner.ipa",
+  "appPath": "./builds/BullsEye.ipa",
+  "testAppPath": "./builds/BullsEyeUITests-Runner.ipa",
   "installationDetails": { "preCleanUp": true, "resign": true },
   "numOfDevices": 1,
   "shard": false,
